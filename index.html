@@ -18,24 +18,21 @@
     </nav>
   </header>
 
-<section class="hero">
-  <div class="hero-flex">
-    <div class="hero-content">
-      <h1>Hi, I'm Cooper Joyce</h1>
-      <p>Game Design Student & Designer</p>
-      <a href="#projects" class="btn">View My Work</a>
-      <a href="file:///C|/Users/coope/Desktop/portfolio/MyPortfolio\Cooper_Joyce_Resume.pdf" class="btn" target="_blank" style="margin-left: 1rem;">View Resume</a>
+  <section class="hero">
+    <div class="hero-flex">
+      <div class="hero-content">
+        <h1>Hi, I'm Cooper Joyce</h1>
+        <p>Game Design Student & Designer</p>
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="Cooper_Joyce_Resume.pdf" class="btn" target="_blank" style="margin-left: 1rem;">View Resume</a>
+      </div>
+      <div class="hero-video">
+        <a href="https://ecu.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=cebe8ac2-7fdf-4141-9bf5-b2ed00c7e6fe" target="_blank">
+          <img src="img/video-thumbnail.jpg" alt="Watch my video pitch" class="video-thumbnail">
+        </a>
+      </div>
     </div>
-    <div class="hero-video">
-  <a href="https://ecu.ap.panopto.com/Panopto/Pages/Viewer.aspx?id=cebe8ac2-7fdf-4141-9bf5-b2ed00c7e6fe" target="_blank">
-    <img src="file:///C:\Users\coope\Desktop\Portfolio\MyPortfolio\S30vgQBbTs.jpg" alt="Watch my video pitch" class="video-thumbnail">
-  </a>
-</div>
-
-
-    </div>
-  </div>
-</section>
+  </section>
 
   <section id="about" class="section dark">
     <h2>About Me</h2>
@@ -43,48 +40,44 @@
   </section>
 
   <section id="projects" class="section">
-  <h2>Projects</h2>
+    <h2>Projects</h2>
 
-  <!-- Design Carousel -->
-  <div class="project">
-    <div class="carousel">
-      <button class="carousel-btn prev" onclick="changeSlide('design', -1)">&#10094;</button>
-      <img id="carousel-img-design" src="file:///C|/Users/coope/Desktop/portfolio/MyPortfolio\design1.jpg" alt="Design work">
-      <button class="carousel-btn next" onclick="changeSlide('design', 1)">&#10095;</button>
+    <div class="project">
+      <div class="carousel">
+        <button class="carousel-btn prev" onclick="changeSlide('design', -1)">&#10094;</button>
+        <img id="carousel-img-design" src="img/design1.jpg" alt="Design work">
+        <button class="carousel-btn next" onclick="changeSlide('design', 1)">&#10095;</button>
+      </div>
+      <div>
+        <h3>Design</h3>
+        <p>Created clean, purposeful visual designs and crafted solutions to design problems with a focus on layout, colour, and user clarity across print and digital formats.</p>
+      </div>
     </div>
-    <div>
-      <h3>Design</h3>
-      <p>Created clean, purposeful visual designs and crafted solutions to design problems with a focus on layout, colour, and user clarity across print and digital formats.</p>
-    </div>
-  </div>
 
-  <!-- QA Testing Carousel -->
-  <div class="project">
-    <div class="carousel">
-      <button class="carousel-btn prev" onclick="changeSlide('qa', -1)">&#10094;</button>
-      <img id="carousel-img-qa" src="file:///C|/Users/coope/Desktop/portfolio/MyPortfolio\qa1.jpg" alt="QA work">
-      <button class="carousel-btn next" onclick="changeSlide('qa', 1)">&#10095;</button>
+    <div class="project">
+      <div class="carousel">
+        <button class="carousel-btn prev" onclick="changeSlide('qa', -1)">&#10094;</button>
+        <img id="carousel-img-qa" src="img/qa1.jpg" alt="QA work">
+        <button class="carousel-btn next" onclick="changeSlide('qa', 1)">&#10095;</button>
+      </div>
+      <div>
+        <h3>QA Testing</h3>
+        <p>Tested features pre-release, reported bugs, and retested fixes across multiple builds as part of a hands-on QA contributor role for Facepunch.</p>
+      </div>
     </div>
-    <div>
-      <h3>QA Testing</h3>
-      <p>Tested features pre-release, reported bugs, and retested fixes across multiple builds as part of a hands-on QA contributor role for Facepunch.</p>
-    </div>
-  </div>
 
-  <!-- 3D & UX Carousel -->
-  <div class="project">
-    <div class="carousel">
-      <button class="carousel-btn prev" onclick="changeSlide('ux', -1)">&#10094;</button>
-      <img id="carousel-img-ux" src="file:///C|/Users/coope/Desktop/portfolio/MyPortfolio\ux1.jpg" alt="3D UX work">
-      <button class="carousel-btn next" onclick="changeSlide('ux', 1)">&#10095;</button>
+    <div class="project">
+      <div class="carousel">
+        <button class="carousel-btn prev" onclick="changeSlide('ux', -1)">&#10094;</button>
+        <img id="carousel-img-ux" src="img/ux1.jpg" alt="3D UX work">
+        <button class="carousel-btn next" onclick="changeSlide('ux', 1)">&#10095;</button>
+      </div>
+      <div>
+        <h3>3D & UX Design</h3>
+        <p>Explored design tools like Blender, Unity, Illustrator and HTML/CSS to build game mockups, UI layouts, and animated elements that improve player experience.</p>
+      </div>
     </div>
-    <div>
-      <h3>3D & UX Design</h3>
-      <p>Explored design tools like Blender, Unity, Illustrator and HTML/CSS to build game mockups, UI layouts, and animated elements that improve player experience.</p>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <section id="contact" class="section dark">
     <h2>Contact</h2>
@@ -96,34 +89,30 @@
   <footer>
     <p>&copy; 2025 Cooper Joyce – All rights reserved.</p>
   </footer>
-	
-	<script>
-  const imageGroups = {
-    design: ["design1.jpg", "design2.jpg", "design3.jpg"],
-    qa: ["qa1.jpg", "qa2.jpg", "qa3.jpg"],
-    ux: ["ux1.jpg", "ux2.jpg", "ux3.jpg"]
-  };
-
-  const indices = {
-    design: 0,
-    qa: 0,
-    ux: 0
-  };
-
-  function changeSlide(group, direction) {
-    const imgs = imageGroups[group];
-    indices[group] += direction;
-    if (indices[group] < 0) indices[group] = imgs.length - 1;
-    if (indices[group] >= imgs.length) indices[group] = 0;
-
-    const imgElement = document.getElementById(`carousel-img-${group}`);
-    imgElement.src = imgs[indices[group]];
-  }
-</script>
-
-
 
   <script>
+    const imageGroups = {
+      design: ["design1.jpg", "design2.jpg", "design3.jpg"],
+      qa: ["qa1.jpg", "qa2.jpg", "qa3.jpg"],
+      ux: ["ux1.jpg", "ux2.jpg", "ux3.jpg"]
+    };
+
+    const indices = {
+      design: 0,
+      qa: 0,
+      ux: 0
+    };
+
+    function changeSlide(group, direction) {
+      const imgs = imageGroups[group];
+      indices[group] += direction;
+      if (indices[group] < 0) indices[group] = imgs.length - 1;
+      if (indices[group] >= imgs.length) indices[group] = 0;
+
+      const imgElement = document.getElementById(`carousel-img-${group}`);
+      imgElement.src = "img/" + imgs[indices[group]];
+    }
+
     // Smooth scroll effect
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
